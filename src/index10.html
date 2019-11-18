@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS</title>
+
+    <!-- 
+        内部样式表
+        也可以将css样式编写到head的style标签里
+            将样式表编写的style标签中，通过选择器选中指定元素，可以同时设置样式。
+            也可以使得表现和结构进一步分离。
+     -->
+     <!-- <style type="text/css">
+        p {
+            color: purple;
+            font-size: 30px;
+        }
+     </style> -->
+
+     <!-- 
+         还可以将样式写到外部的css文件当中，然后通过link标签将外部的css文件引入到当前文件中。
+         这样外部文件中的css样式会应用到当前页面中。
+
+         完全使结构和表现分离，可以使样式表在不同页面中使用。最大限度的使样式进行复用。通过link标签引入，
+         可以利用浏览器的缓存，加快用户访问的速度提高用户体验。开发中最常用的是外部css文件。
+      -->
+      <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+    <!-- 
+        可以将css样式编写到元素的style属性当中
+            将样式直接编写到style属性当中，这样的样式称为内联样式
+            内联样式只对当前元素的内容起作用，内联样式不方便复用。
+            
+            内联样式，不方便后期维护，不推荐使用。
+     -->
+    <p style="color: red; font-size: 40px">锄禾日当午，汗滴禾下土</p>
+    <p>谁知盘中餐，粒粒皆辛苦</p>
+    <p>谁知盘中餐，粒粒皆辛苦</p>
+    <p>谁知盘中餐，粒粒皆辛苦</p>
+    <p>谁知盘中餐，粒粒皆辛苦</p>
+    <p>谁知盘中餐，粒粒皆辛苦</p>
+
+</body>
+</html>

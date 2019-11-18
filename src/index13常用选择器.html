@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>常用选择器</title>
+
+
+    <style type="text/css">
+        /* 
+            元素选择器
+            作用：通过元素选择器可以选择页面中所有指定元素
+            语法：标签名{}
+        */
+
+        p {
+            color: red;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        /* 
+            id选择器
+             - 通过元素的id属性值选中唯一的一个元素
+             语法：
+                #id 属性值 {}
+        */
+        #p1 {
+            color: orchid;
+        }
+
+        /* 
+            类选择器
+             - 通过元素的class属性值选中一组元素
+             语法：
+                .class {}
+        */
+        .p2 {
+            font-size: 28px;
+        }
+
+        .hello {
+            color: black;
+        }
+
+        /* 
+            为id 为p1 class为p2的元素 还有h1 同时设置一个背景颜色为黄色
+
+            选择器分组
+             - 语法：选择器1， 选择器2， 选择器N{}
+        */
+        #p1, .p2, h1 {
+            background-color: yellow;
+        }
+
+        /* 
+            通配选择器
+                - 可以用来选中页面中的所有元素
+                语法 * {}
+        */
+        * {
+            background-color: yellowgreen;
+        }
+        
+        /* 
+            复合选择器（交集选择器）
+            作用：同时满足多个选择器的元素
+            语法：选择器1选择器2选择器N {}
+         */
+        span.p2 {
+            background-color: aquamarine;
+        }
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <h1>悯农</h1>
+    <p>锄禾日当午</p>
+    <p>汗滴禾下土</p>
+    <p id="p1">谁知盘中餐</p>
+    <p class="p2">粒粒皆辛苦</p>
+    <p class="p2">锄禾日当午</p>
+    <p>汗滴禾下土</p>
+    <p class="p2 hello">谁知盘中餐</p>
+    <p>粒粒皆辛苦</p>
+    <span class="p2">汗滴禾下土</span>
+</body>
+</html>
