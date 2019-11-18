@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪元素</title>
+
+    <style type="text/css">
+    
+        /* 
+            使用伪元素来表示元素中的一些特殊的位置
+         */
+
+        /* 为p中的第一个字符来设置一个特殊样式 */
+        p:first-letter {
+            color: red;
+            font-size: 20px;
+        }
+
+        /* 为P中的第一行设置一个背景颜色 */
+        p:first-line {
+            background-color: yellowgreen;
+        }
+
+        /*
+            before表示元素最前边的部分，
+            一般before需要结合content这个样式一起结合使用
+            通过content可以向before或者after进行添加 
+         */
+        p:before {
+            color: red;
+            content: "我回出现在段落的最前面"
+        }
+
+        p:after {
+            color: rgb(119, 167, 25);
+            content: "我回出现在段落的最后边"
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <p>
+        我是一个段落为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式为p中的第一个字符来设置一个特殊样式
+    </p>
+
+</body>
+</html>

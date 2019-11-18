@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪类选择器</title>
+
+    <style type="text/css">
+
+         /*
+            伪类专门用来表示元素的一种特殊的状态，
+            比如: 访问过的超链接，普通的超链接，获取焦点的文本框
+            当我们需要在为这些特殊状态的元素设置样式时，就可以使用伪类。 
+          */
+
+        /* 为没有访问过的链接设置一个颜色 */
+        a:link {
+            color: yellowgreen;
+        }
+
+        /* 为访问过的链接设置一个颜色
+           浏览器是通过历史记录来判断一个连接是否访问过，
+           由于涉及影虎隐私问题，使用visted伪类只能设置字体颜色
+         */
+        a:visited {
+            color: red;
+        }
+
+         /* 鼠标移入时的状态 */
+        a:hover {
+            color: skyblue;
+        }
+
+        /* 点击时状态 */
+        a:active {
+            color: black;
+        }
+
+         /* 文本框获取焦点以后，修改背景颜色为黄色 */
+        input:focus {
+            background-color: yellowgreen;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <input type="text">
+</body>
+</html>
