@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表标签</title>
+
+
+    <style>
+        /* 去掉项目符号 */
+        ul, ol {
+            list-style-type: square;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- 
+        列表相当于超时购物时的那个购物清单
+            在HTML中可以创建列表，网页中一共有三种列表：
+                1、无序列表
+                2、有序列表
+                3、定义列表
+     -->
+
+     <!-- 
+         无序列表
+            - 使用ul标签创建
+            - 使用li在ul列表中创建一个个的列表项
+            - 一个li就是一个列表项
+
+        通过type属性可以修改无序列表的项目符号，默认的项目符号我们一般都要去掉不使用
+        如果需要设置符号，则可以采用为li设置背景图片的方式
+
+        ul li 都是块元素
+
+      -->
+      <ul type="circle">
+        <li>西门大官人</li>
+        <li>柴大官人</li>
+        <li>许大官人</li>
+        <li>唐朝大官人</li>
+      </ul>
+
+      <!-- 
+          有序列表和无需列表类似，只不过他使用ol代替ul 
+          有序列表使用有序的序号作为项目符号
+
+          type属性可以指定需要的类型
+          可选值：1.默认使用阿拉伯数字
+                a、A 采用大写或小写字母作为符号
+                i、I 罗马数字作为序号
+       -->
+       <ol>
+           <li>结构</li>
+           <li>表现</li>
+           <li>行为</li>
+       </ol>
+
+       <!-- 
+           列表之间可以互相嵌套，可以在无序列表中创建一个有序列表，也可以反之处理
+        -->
+        <p>菜谱</p>
+        <ul>
+            <li>
+                鱼香肉丝
+                <ol>
+                    <li>鱼</li>
+                    <li>香</li>
+                    <li>肉丝</li>
+                </ol>
+            </li>
+            <li>
+                宫保鸡丁
+                <ol>
+                    <li>鸡丁</li>
+                    <li>宫保</li>
+                </ol>
+            </li>
+            <li>臭豆腐</li>
+        </ul>
+
+        <!-- 
+            定义列表可以用来对一些词汇或内容进行定义
+
+                使用dl来创建一个定义列表
+                dl中有两个子标签
+                    dt: 被定义的内容
+                    dd：对定义内容的描述
+         -->
+
+         <dl>
+             <dt>武松</dt>
+             <dd>景阳冈打虎英雄，战斗力99</dd>
+             <dd>后打死西门庆，后投奔梁上</dd>
+             <dt>武大</dt>
+             <dd>著名餐饮企业家，战斗力0</dd>
+             
+         </dl>
+
+
+</body>
+</html>
