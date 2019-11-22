@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基础、文本标签</title>
+</head>
+<body>
+    <!-- 
+        em和strong
+            这两个标签都是表示一个强调的内容
+            em主要表示语气的强调，em在浏览器中表示斜体显示
+            strong表示强调的内容，比em更强烈。默认使用粗体显示。
+     -->
+
+    <strong>警告<em>周琦要上场了</em></strong>
+
+    <p>今天天气<em>真不错</em></p>
+    <strong>
+        如果你不认真上课，你就找不到好工作！
+    </strong>
+
+    <!-- 
+        i标签中的内容，会斜体显示
+        b标签中的内容会加粗显示
+
+        H5规范中规定，对于不需要着重的内容而是单纯的加粗或斜体就可以使用b和i标签
+     -->
+    <p>
+        <i>我是i标签中的内容</i>
+        <b>我是B标签中的内容</b>
+    </p>
+
+
+    <!--
+        small标签中的内容会比他的父标签元素中的文字要小一些
+         在h5中使用small标签来显示一些细则一类的内容
+         比如合同中的小字，网站中的版权声明等。
+     -->
+     <p>
+         我是P标签中的内容<small>我是small标签中的内容</small>
+     </p>
+
+     <!-- 
+         cite 标签 网页中所有加书名号的内容，表示参考的内容
+
+         比如 书名，歌名，话剧名，舞蹈，电影等
+      -->
+      <p>
+          我是P标签中的cite标签 <cite>《论语》</cite>
+      </p>
+
+      <!-- 
+          q标签，表示一个短的引用，或者行内引用
+          q标签引用的内容，浏览器会默认添加上引号。
+
+          blockquote标签表示一个长引用 块级
+       -->
+
+       <p>我是P 标签中的,子曰：<q>学而时习之，不亦说乎</q></p>
+
+       <div>
+           子曰：
+           <blockquote>
+                有朋自远方来，不亦说乎
+                学而时习之，呵呵
+           </blockquote>
+       </div>
+
+       <!-- 
+           使用sup标签来设置一个上标
+           使用sub标签来设置一个下标
+           使用del标签来设置一个删除标签
+           ins表示一个插入的标签会添加一个下划线
+        -->
+       <p>
+            2<sup>2</sup>
+            赵薇<sup><a href="https://www.baidu.com">1</a></sup>
+            赵丽颖<sub><a href="https://www.google.com">google</a></sub>
+            <div>
+                <del>这个价格无效</del>
+            </div>
+            <div>
+                <p>我们的老师真<ins>好啊</ins></p>
+            </div>
+       </p>
+
+       <!-- 
+           网页中需要编写一些代码
+        -->
+        <pre>
+            <code>
+                    windows.onload = function() {
+                        alert("hello world");
+                    }
+                </code>
+        </pre>
+
+
+        
+
+
+</body>
+</html>
