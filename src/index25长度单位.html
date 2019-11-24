@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>长度单位</title>
+
+    <style>
+        /*
+            长度单位 
+                像素 px  一个小点
+                不同显示器，一个点的大小也不相同。
+                显示效果越好，像素越小，反之像素越大。
+
+                百分比% 根据父元素的样式来计算该值
+                自适应的页面时，经常使用百分比
+
+                em
+                    - em和百分比类似，它是相对于当前元素的字体大小来计算的。
+                    - 1em = 1 font-size
+                    - 使用em时，当字体大小发生改变时，em也会随之改变
+                    -当设置字体相关的样式时，经常会使用em
+
+         */
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .box1 {
+            font-size: 100px;
+            width: 2em;
+            height: 2em;
+            background-color: yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+        <div class="box1"></div>
+    </div>
+    
+</body>
+</html>
