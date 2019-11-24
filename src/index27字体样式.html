@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>字体样式</title>
+
+    <style>
+    
+        .p1 {
+            /* 使用color设置字体颜色 */
+            color: red;
+            /* 
+            设置字体的大小，浏览器默认大小都是16px
+            font-size设置的并不是字体的自身大小
+                在页面中，每个文字都是处在一个看不见的框中
+                我们设置的font-size实际上是设置格的高度，并不是字体大小
+                一般情况下，文字都要比格小一些，也有时候会大一些，
+                根据字体不同，显示效果也不一样。
+             */
+            font-size: 30px;
+            /* 
+                通过font-family设置指定的字体
+                当采用某种字体时，如果浏览器支持，则显示设置的字体，否则显示默认字体
+                该样式可以同时指定多个字体，多个字体之间使用逗号分开。
+                当采用多个字体时，优先使用前面的字体，如果前面没有，尝试下一个字体。。。。。
+                浏览器使用的字体，默认为计算机的字体，如果计算机有，则使用，没有则不使用
+             */
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .p2 {
+            font-style: inherit;
+        }
+        
+    </style>
+
+
+
+</head>
+<body>
+    <p class="p1">我是一个P标签呵呵哒morning</p>
+
+    <!-- 
+        在网页中，字体分五大类
+        serif 衬线字体
+        sans-serif 非衬线字体
+        monospace 等宽字体
+        cursive 草书字体
+        fantasy 虚幻字体
+
+        可以将字体设置为这些大的分类，当设置为大的分类后，
+        浏览器会自动选择指定的字体，并应用样式
+     -->
+     <p style="font-family: serif;">我是衬线字体</p>
+     <p style="font-family: sans-serif;">我是非衬线字体</p>
+     <p style="font-family: monospace;">我是等宽字体</p>
+     <p style="font-family: monospace;">我是等宽字体</p>
+     <p style="font-family: cursive;">我是草书字体</p>
+     <p style="font-family: fantasy;">我是虚幻字体</p>
+
+
+
+     <p class="p2">我是一端文字, ABCDFEGabcdefg</p>
+
+</body>
+</html>
