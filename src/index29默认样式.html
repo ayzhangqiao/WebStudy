@@ -9,7 +9,27 @@
     <style>
       /* 
             浏览器为了在页面中没有样式时候，也给页面一个比较好的显示效果，会添加一个默认样式。
+            所以为很多元素设置了一些默认的margin和padding
+            他的这些默认样式正常情况下不需要使用。
+
+            所以，我们往往在编写样式之前需要将默认的margin和padding去掉。
+
+            * {
+                marin: 0;
+                padding: 0;
+            }
+
          */
+
+      /* body p {
+        margin: 0;
+        padding: 0;
+      } */
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
       .box1 {
         width: 100px;
