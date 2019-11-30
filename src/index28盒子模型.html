@@ -124,6 +124,39 @@
             margin: 10px 20px 30px 40px;
         }
 
+        /* 
+            在网页中，垂直方向的相邻外边距会重叠 --<相邻，垂直>
+                所谓的外边距重叠指兄弟元素之间的外边距会取最大值而不是求和
+                如果是父子元素的垂直外边距相邻了，则子元素的外边距会设置给父元素
+         */
+        .box11 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 100px;
+        }
+
+        .box12 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin-top: 100px;
+        }
+
+        .box13 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border-top: 0.5px yellow solid;
+        }
+
+        .box14 {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            margin-top: 100px;
+        }
+
     </style>
 
 
@@ -146,6 +179,18 @@
     <br>
 
     <div class="box4"></div>
+
+    <br>
+
+    <br>
+
+    <div class="box13">
+        <div class="box14"></div>
+    </div>
+
+    <div class="box11"></div>
+    <a href="">a</a>
+    <div class="box12"></div>
     
 </body>
 </html>
