@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>overflow</title>
+
+    <style>
+      .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+
+        /* 子元素默认是在父元素内容区中，理论上讲子元素最大可以等于父元素内容区 
+           
+             如果超过父元素内容区，则超出的内容会在父元素外显示，超出父元素的内容，称为溢出的内容
+
+             父元素默认是将溢出的内容，在父元素外边显示
+
+             overflow：规定元素溢出时显示方式处理'
+
+                visible: 不会处理，在父元素外显示
+                hidden: 溢出的内容 会被修剪，不显示
+                scroll: 父元素滚动条，滑动显示，该属性无论内容是否溢出，都会添加滑动条
+                auto: 根据需求自动添加滚动条，需要水平，添加水平，需要垂直，添加垂直
+        */
+        overflow: auto;
+      }
+
+      .box2 {
+        width: 100px;
+        height: 500px;
+        background-color: peru;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="box2"></div>
+    </div>
+  </body>
+</html>
