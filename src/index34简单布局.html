@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>简单布局</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        /* 设置宽度 */
+        width: 1000px;
+        height: 100px;
+        background-color: yellowgreen;
+        margin: 0 auto;
+      }
+
+      .content {
+        width: 1000px;
+        height: 400px;
+        background-color: orange;
+        margin: 10px auto;
+      }
+
+      /* 设置content中小div */
+      .left {
+        width: 200px;
+        height: 100%;
+        background-color: skyblue;
+        float: left;
+      }
+      .center {
+        width: 580px;
+        height: 100%;
+        background-color: yellow;
+        float: left;
+        margin: 0 10px;
+      }
+      .right {
+        width: 200px;
+        height: 100%;
+        background-color: pink;
+        float: left;
+      }
+
+      .footer {
+        width: 1000px;
+        height: 100px;
+        background-color: silver;
+        margin: 0 auto;
+      }
+
+      .box1 {
+        border: 10px red solid;
+      }
+
+      .box2 {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header"></div>
+
+    <div class="content">
+      <div class="left"></div>
+      <div class="center"></div>
+      <div class="right"></div>
+    </div>
+
+    <div class="footer"></div>
+
+    <br />
+
+    <div class="box1">
+      <div class="box2">a</div>
+    </div>
+  </body>
+</html>

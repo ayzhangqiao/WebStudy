@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>浮动</title>
+
+    <style>
+      .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        /* 
+            块元素在文档流中默认是垂直排列，依次排开
+
+            如果希望块元素在页面中水平排列，可以使块元素脱离文档流
+            使用float使元素浮动
+
+            可选址
+                none: 默认值，默认排列
+                left：脱离文档流，在页面左侧浮动
+                right：元素脱离文档流，在页面中右侧浮动
+
+                当一个元素设置浮动后，其他元素会立即脱离文档流，下边元素会立即向上移动
+                元素浮动后，会尽量向页面的左上或右上浮动，知道遇到父元素的边框或者其他浮动元素停止。
+                如果浮动元素上边是一个没有浮动的块元素，则浮动元素不会超过块元素
+                浮动的元素不会超过他上边的兄弟元素，最多一边齐平
+
+                浮动元素，不会盖住文字，文字会自动环绕在浮动元素周围。
+                可以通过设置浮动，来设置文字环绕图片的效果
+
+
+                内联元素浮动脱离文档流后会变为块元素
+         */
+        /* float: left; */
+      }
+      .box2 {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        /* float: left; */
+      }
+      .box3 {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        /* float: left; */
+      }
+
+      .box4 {
+        width: 100px;
+        height: 100px;
+        background-color: #baf;
+      }
+
+      .p1 {
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+    <div class="box4"></div>
+
+    <p class="p1"></p>
+  </body>
+</html>
